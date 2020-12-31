@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: wheel
+  cloud:
+    nacos:
+      config:
+        server-addr: 10.0.100.187:8848
+        enabled: true
+        namespace: 946b5b08-5b26-46b5-ad05-257532ff89ae
+        group: DEFAULT_GROUP
+        name: wheel
+        file-extension: properties
+#        shared-dataids: common-api.yml
+#        refreshable-dataids: common-api.yml

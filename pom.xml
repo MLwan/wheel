@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>mybatisplus</module>
+        <module>nacos</module>
     </modules>
 
     <!--引入 Spring Boot Starter 父工程-->
