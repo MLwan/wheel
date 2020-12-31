@@ -1,6 +1,6 @@
 spring:
-  application:
-    name: wheel
+#  application:
+#    name: wheel
   cloud:
     nacos:
       config:
