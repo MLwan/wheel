@@ -12,6 +12,7 @@
         <module>mybatisplus</module>
         <module>nacos</module>
         <module>java8</module>
+        <module>servletlistenerfilterinterceptor</module>
     </modules>
 
     <!--引入 Spring Boot Starter 父工程-->
