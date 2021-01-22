@@ -1,3 +1,4 @@
+#如果application为properties那么bootstrap为properties才能在application加载
 spring:
 #  application:
 #    name: wheel
@@ -12,3 +13,5 @@ spring:
         file-extension: properties
 #        shared-dataids: common-api.yml
 #        refreshable-dataids: common-api.yml
+
+

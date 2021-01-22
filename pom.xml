@@ -13,6 +13,7 @@
         <module>nacos</module>
         <module>java8</module>
         <module>servletlistenerfilterinterceptor</module>
+        <module>redis</module>
     </modules>
 
     <!--引入 Spring Boot Starter 父工程-->
@@ -40,22 +41,19 @@
             <optional>true</optional>
         </dependency>
 
-        <!-- 数据库驱动 -->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
-
+        <!-- web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
             <version>2.3.0.RELEASE</version>
             <scope>compile</scope>
         </dependency>
+        <!-- fastjson -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>1.2.70</version>
         </dependency>
+
     </dependencies>
 </project>
