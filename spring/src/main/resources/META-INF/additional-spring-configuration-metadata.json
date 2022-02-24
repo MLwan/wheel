@@ -1,0 +1,15 @@
+{
+  "properties": [
+    {
+      "name": "taco.orders.page-size",
+      "type": "java.lang.String",
+      "description": "自定义Bean属性"
+    },
+    {
+      "name": "taco.orders.pageSize",
+      "type": "java.lang.String",
+      "description": "自定义Bean属性 Description for taco.orders.pageSize."
+    }
+
+  ]
+}
