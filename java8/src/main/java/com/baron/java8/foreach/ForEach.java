@@ -11,6 +11,7 @@ import java.util.function.Consumer;
 @RequestMapping(path="/java8")
 public class ForEach {
 
+
     @RequestMapping(path="/foreach")
     public void forEach() {
 //        1.1. Iterable.forEach()方法
