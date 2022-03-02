@@ -12,7 +12,6 @@
         <module>mybatisplus</module>
         <module>nacos</module>
         <module>java8</module>
-        <module>servletlistenerfilterinterceptor</module>
         <module>redis</module>
         <module>spring_conponentscan_filter</module>
         <module>spring</module>
