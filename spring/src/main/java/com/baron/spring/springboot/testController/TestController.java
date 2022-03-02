@@ -1,14 +1,10 @@
-package com.baron.spring.ioc.testController;
+package com.baron.spring.springboot.testController;
 
-import com.baron.spring.ioc.pojo.Book;
-import com.sun.org.apache.xpath.internal.operations.Bool;
+import com.baron.spring.springboot.pojo.Book;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import javax.validation.Valid;
 

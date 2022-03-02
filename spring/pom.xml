@@ -17,6 +17,7 @@
 <!--        <optional>true</optional>-->
 <!--    </dependency>-->
 
+    <!-- 校验 -->
     <dependency>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-validator</artifactId>
