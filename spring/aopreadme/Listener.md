@@ -4,10 +4,9 @@
 
 ### 1.1 定义
 
-Servlet 监听器是 Servlet 规范中定义的一种特殊类，用于监听 ServletContext、HttpSession 和 ServletRequest 等作用域对象的创建与销毁事件，以及监听这些作用域对象中属性发生修改的事件。监听器使用了设计模式中的观察者模式，它关注特定事物的创建、销毁以及变化并做出回调动作，因此监听器具有异步的特性。
+Servlet 监听器是 Servlet 规范中定义的一种特殊类，用于监听 ServletContext、HttpSession 和 ServletRequest 等作用域对象的创建与销毁事件，作用域对象中属性发生修改的事件以及监听HttpSession中对象状态改变（被绑定、解绑、钝化、活化）。监听器使用了设计模式中的观察者模式，它关注特定事物的创建、销毁以及变化并做出回调动作，因此监听器具有异步的特性。
 
-Servlet Listener 监听三大域对象的创建和销毁事件，三大对象分别是：
-    
+理解ServletContext、HttpSession、ServletRequest
 1、ServletContext Listener：application 级别，整个应用只存在一个，所有用户使用一个ServletContext
 
 2、HttpSession Listener：session 级别，同一个用户的浏览器开启与关闭生命周期内使用的是同一个session
@@ -15,13 +14,28 @@ Servlet Listener 监听三大域对象的创建和销毁事件，三大对象分
 3、ServletRequest Listener：request 级别，每一个HTTP请求为一个request
 
 ![img](img/637ba44184423b9b317813933a797dae_1164x604.png)
-    除了监听域对象的创建和销毁，还可以监听域对象中属性发生修改的事件。
 
-- HttpSessionAttributeListener
+1、监听ServletContext、Request、Session作用域的创建和销毁
 
-- ServletContextAttributeListener
+- ServletContextListener：监听ServletContext
 
-- ServletRequestAttributeListener
+- HttpSessionListener：监听新的Session创建
+
+- ServletRequestListener：监听ServletRequest的初始化和销毁
+
+2、监听ServletContext、Request、Session作用域对象中属性的变化（增、删、改）
+
+- HttpSessionAttributeListener：监听Servlet上下文参数的变化
+- ServletContextAttributeListener：监听HttpSession参数的变化
+- ServletRequestAttributeListener：监听HttpRequest参数的变化
+
+3、监听Session中对象状态改变（被绑定、解绑、钝化、活化）
+
+- HttpSessionBindingListener：监听HttpSession，并绑定及解除绑定
+
+- HttpSessionActivationListener：监听钝化和活动的HttpSession状态改变
+
+  
 
 ### 1.2 使用场景
 
