@@ -1,7 +1,6 @@
-package com.baron.servlet.interceptorconfig;
+package com.baron.spring.aop.servlet.interceptor.interceptorconfig;
 
-import com.baron.servlet.interceptor.CustomHandlerInterceptor;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.baron.spring.aop.servlet.interceptor.interceptor.CustomHandlerInterceptor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
@@ -13,7 +12,7 @@ import javax.annotation.Resource;
 public class MyWebMvcConfigurer implements WebMvcConfigurer {
 //    @Autowired
     @Resource
-    CustomHandlerInterceptor customHandlerInterceptor;
+CustomHandlerInterceptor customHandlerInterceptor;
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {

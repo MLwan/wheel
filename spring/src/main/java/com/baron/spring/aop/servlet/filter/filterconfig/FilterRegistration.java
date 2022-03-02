@@ -1,6 +1,7 @@
-package com.baron.servlet.filterconfig;
+package com.baron.spring.aop.servlet.filter.filterconfig;
 
-import com.baron.servlet.filter.CustomFilter;
+
+import com.baron.spring.aop.servlet.filter.filter.CustomFilter;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

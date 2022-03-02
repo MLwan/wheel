@@ -1,9 +1,9 @@
-package com.baron.servlet.filter;
+package com.baron.spring.aop.servlet.filter.filter;
 
 import lombok.extern.slf4j.Slf4j;
 
 import javax.servlet.*;
-import javax.servlet.annotation.WebFilter;
+import java.io.BufferedReader;
 import java.io.IOException;
 
 
@@ -25,6 +25,25 @@ public class CustomFilter implements Filter {
         // 比如设置请求编码
         // request.setCharacterEncoding("UTF-8");
         // response.setCharacterEncoding("UTF-8");
+
+        /*
+            获取 HttpServletRequest json形式的全部参数
+         */
+        StringBuffer sb = new StringBuffer();
+        String line = null;
+        try {
+            BufferedReader reader = request.getReader();
+            while ((line = reader.readLine()) != null)
+                sb.append(line);
+        } catch (Exception e) { /*report an error*/ }
+        //将空格和换行符替换掉避免使用反序列化工具解析对象时失败
+        String jsonString = sb.toString().replaceAll("\\s","").replaceAll("\n","");
+        //下面就可以使用如GSON或FastJson之类的工具解析成自己的对象数据并做后续的业务逻辑处理了
+
+        System.out.println("ServletRequest转json输出"+jsonString);
+//        PrintWriter out = response.getWriter();
+//        out.write("success");
+//        out.close();
 
         //链路 直接传给下一个过滤器
         chain.doFilter(request, response);

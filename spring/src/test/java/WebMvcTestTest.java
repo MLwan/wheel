@@ -1,4 +1,4 @@
-//import com.baron.spring.ioc.Application;
+//import com.baron.spring.Application;
 import com.baron.spring.ioc.testController.TestController;
 import org.junit.Test;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;

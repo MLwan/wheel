@@ -1,4 +1,4 @@
-package com.baron.servlet.interceptor;
+package com.baron.spring.aop.servlet.interceptor.interceptor;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
