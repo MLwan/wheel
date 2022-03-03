@@ -1,4 +1,4 @@
-package com.baron.spring.springboot.pojo;
+package com.baron.spring.springboot.autoconfig.pojo;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

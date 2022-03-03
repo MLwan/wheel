@@ -1,6 +1,6 @@
-package com.baron.spring.springboot.testController;
+package com.baron.spring.springboot.autoconfig.testController;
 
-import com.baron.spring.springboot.pojo.Book;
+import com.baron.spring.springboot.autoconfig.pojo.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
