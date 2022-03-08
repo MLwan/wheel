@@ -34,6 +34,12 @@
         <version>2.2.6</version>
     </dependency>
 
+    <!-- reactor -->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-webflux</artifactId>
+    </dependency>
+
 </dependencies>
 
 </project>
