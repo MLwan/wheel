@@ -1,5 +1,5 @@
 //import com.baron.spring.Application;
-import com.baron.spring.springboot.testController.TestController;
+import com.baron.spring.springboot.autoconfig.testController.TestController;
 import org.junit.Test;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 
