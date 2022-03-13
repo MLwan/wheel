@@ -15,6 +15,7 @@
         <module>redis</module>
         <module>spring_conponentscan_filter</module>
         <module>spring</module>
+        <module>security</module>
     </modules>
 
     <!--引入 Spring Boot Starter 父工程-->
