@@ -1,0 +1,1 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.baron.spring.crypt.config.EncryptAutoConfiguration
