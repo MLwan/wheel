@@ -1,6 +1,5 @@
-import com.baron.spring.crypt.common.Encrypt;
-import com.baron.spring.crypt.common.EncryptProperties;
-import com.baron.spring.crypt.common.RespBean;
+package com.baron.spring.crypt.common;
+
 import com.baron.spring.crypt.util.AESUtils;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
